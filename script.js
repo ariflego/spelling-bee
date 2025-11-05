@@ -145,7 +145,7 @@ function startRound(){
   if(timerEl) timerEl.textContent = (timeRemainingMs/1000).toFixed(1) + "s";
 
   // build audio filename (capitalised british) and play
-  const filename = capitaliseFirst(british) + ".mp3";
+  const filename = capitaliseFirst(british) + ".MP3";
   if(audio){ audio.pause(); audio = null; }
   audio = new Audio(filename);
   audio.preload = "auto";
