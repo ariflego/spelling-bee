@@ -131,8 +131,8 @@ function startRound(){
   const british = current.entry.british;
   const letters = letterCount(british);
 
-  // timing: 0.075s per letter (ms)
-  const letterTimeMs = 75;
+  // timing: 0.1s per letter (ms)
+  const letterTimeMs = 100;
   const timeMs = Math.max( Math.round(letters * letterTimeMs), letterTimeMs );
   timeRemainingMs = timeMs;
   playsUsed = 0;
